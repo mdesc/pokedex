@@ -5,12 +5,12 @@ module.exports = shipit => {
   
     shipit.initConfig({
       default: {
-        deployTo: '/var/apps/super-project',
-        repositoryUrl: 'https://github.com/user/super-project.git',
+        deployTo: '/static-app/pokedex/',
+        repositoryUrl: 'https://github.com/mdesc/pokedex.git',
         key:'./pokedexInstance.pem',
       },
       staging: {
-        servers: 'deploy@staging.super-project.com',
+        servers: 'ec2-user@ec2-13-37-216-46.eu-west-3.compute.amazonaws.com',
       },
     })
   }
